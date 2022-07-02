@@ -1,0 +1,70 @@
+
+
+:root {
+  --base: #202231;
+  --surface: #272938;
+  --overlay: #363847;
+  --soft: #6B6D7C;
+  --slight: #8D8F9E;
+  --text: #DEE0EF;
+
+  --coral: #D1918F;
+  --violet:  #A392DC;
+  --salmon: #D6B4B4;
+  --fennel: #709BBD;
+  --sky: #A0B6E8;
+
+
+  --highlight-low: #292A3A;
+  --highlight-med: #414354;
+  --highlight-high: #535568;
+}
+.CodeMirror {
+  font-family: monaco, Consolas, Menlo, Courier, monospace;
+  font-size: 16px;
+  line-height: 1.5em;
+  background-color: var(--base);
+}
+span {
+  color: var(--soft);
+}
+.CodeMirror-gutters {
+  background-color: var(--surface);
+  border-right: 1px solid var(--overlay);
+}
+.CodeMirror-linenumber {
+  color: var(--text);
+}
+.CodeMirror-guttermarker-slight {
+  color: var(--fennel);
+}
+.CodeMirror-foldmarker {
+  color: var(--coral);
+  text-shadow: none;
+}
+.extras .icon svg {
+  fill: var(--violet);
+}
+.extras .icon:hover {
+  background-color: var(--overlay);
+}
+.cm-s-default .cm-comment {
+  color: var(--soft);
+}
+.cm-s-default .cm-operator,
+.cm-s-default .cm-property,
+.cm-s-default .cm-punctuation,
+.cm-s-default .cm-variable {
+  color: var(--sky);
+}
+.cm-s-default .cm-atom,
+.cm-s-default .cm-number {
+  color: var(--salmon);
+}
+.cm-s-default .cm-string,
+.cm-s-default .cm-string-2 {
+  color: var(--violet);
+}
+.CodeMirror-selected {
+  background: var(--highlight-med) !important;
+}
